@@ -66,10 +66,10 @@
 
       <!-- Search -->
       <div class="header-of-search">
-        <a href="{{ route('home') }}" class="header_logo">
+        <div class="header_logo">
           <img class="logo_img" src="{{ asset('assets/uploads/web_logo.png') }}" alt="logo">
           <span class="store-name">HNStore</span>
-        </a>
+        </div>
         <div class="header_search">
           <form action="#" class="header_search" method="GET">
             <input type="text" name="search" class="header_search-input" placeholder="Tìm kiếm...">

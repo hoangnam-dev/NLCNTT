@@ -4,7 +4,7 @@
 @endsection
 {{-- {{ dd($sale_prds) }} --}}
 @section('content')
-<div class="row mb-5 py-5">
+<div class="row mb-5">
     <div class="row mb-5">
         <div class="col-12">
             <div class="row">

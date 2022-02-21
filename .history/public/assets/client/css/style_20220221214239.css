@@ -302,8 +302,8 @@ html{
   .header_navbar-item:hover,
   .header_navbar-item-link:hover,
   .header_navbar-icon:hover {
-    color: rgba(255, 255, 255, 0.6) !important;
-    /* color: #0168fa; */
+    /* color: rgba(255, 255, 255, 0.6); */
+    color: #0168fa;
     cursor: pointer;
   }
   .header_navbar-item-strong {

@@ -38,7 +38,7 @@ Route::prefix('/user')->group(function() {
 });
 
 Route::prefix('/product')->group(function() {
-    Route::get('/sanpham/{masp}', [ProductController::class, 'index'])->name('product-detail');
+    Route::get('/sanpham/{id}', [ProductController::class, 'index'])->name('product-detail');
 });
 
 

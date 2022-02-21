@@ -4,7 +4,7 @@
 @endsection
 {{-- {{ dd($sale_prds) }} --}}
 @section('content')
-<div class="row mb-5 py-5">
+<div class="row mb-5">
     <div class="row mb-5">
         <div class="col-12">
             <div class="row">
@@ -20,7 +20,7 @@
                 <div class="col-3">
                     <div class="product-item">
                         <!-- ẢNh Sản Phẩm -->
-                        <a href="{{ route('product-detail', ['masp'=>$value->masp]) }}" class="product-img">
+                        <a href="{{ route('product-detail', ['id'=>$sale_prds->masp]) }}" class="product-img">
                             <div class="product-item_img"
                                 style="background-image: url('{{ asset('assets/uploads/products/'.$value->avatar.'') }}');">
                             </div>

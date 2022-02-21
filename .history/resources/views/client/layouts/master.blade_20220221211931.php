@@ -17,8 +17,7 @@
 <body>
     <div class="wrapper">
         @include('client.blocks.header')
-        {{-- <main id="main" class="py-5"> --}}
-        <main id="main">
+        <main id="main" class="py-5">
             <div class="container">
                 @yield('content')
             </div>

@@ -72,7 +72,7 @@ html{
   .header_navbar-icon {
     font-size: 16px;
     margin: 0 5px;
-    color: var(--white-color) !important;
+    color: #0168fa;
   }
   .header_navbar-title-no-pointer {
     cursor: text;
@@ -302,8 +302,7 @@ html{
   .header_navbar-item:hover,
   .header_navbar-item-link:hover,
   .header_navbar-icon:hover {
-    color: rgba(255, 255, 255, 0.6) !important;
-    /* color: #0168fa; */
+    color: rgba(255, 255, 255, 0.6);
     cursor: pointer;
   }
   .header_navbar-item-strong {
@@ -332,7 +331,6 @@ html{
     cursor: pointer;
     display: flex;
     align-items: center;
-    text-decoration: none;
   }
     .logo_img{
       width: 50px;
