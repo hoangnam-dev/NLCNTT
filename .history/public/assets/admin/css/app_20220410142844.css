@@ -1,0 +1,31 @@
+.form-control[type="file"] {
+    height: 100%;
+}
+
+.images {
+    width: 150px;
+}
+
+.showPass {
+    cursor: pointer;
+}
+
+.icon {
+    font-size: 32px;
+}
+
+.icon-green {
+    color: green;
+}
+
+.icon-red {
+    color: red;
+}
+
+table.dataTable thead th,
+table.dataTable tbody td,
+table.dataTable tbody th {
+    /* padding: 10px 18px;
+    border-bottom: 1px solid #ddd; */
+    text-align: center;
+}

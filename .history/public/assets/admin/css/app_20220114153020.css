@@ -1,0 +1,18 @@
+.form-control[type="file"] {
+ height: 100%;
+}
+.images {
+    width: 150px;
+}
+.showPass {
+    cursor: pointer;
+}
+.icon{
+    font-size: 32px;
+}
+.icon-green{
+    color: green;
+}
+.icon-red{
+    color: red;
+}

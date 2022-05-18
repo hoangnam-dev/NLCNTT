@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/* Navbar */
+.navbar-brand {
+    font-size: 32px;
+    font-weight: 700;
+}
+.navbar-logo {
+    width: 50px;
+    height: 50px;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    position: absolute;
+    display: none;
+    z-index: 123;
+    list-style-type: none;
+    background-color: whitesmoke;
+    padding: 0;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Product */
+.list_product-title {
+    width: 100%;
+    color: #444;
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: 200;
+    margin: 10px 5px 0px 5px;
+}
+.card-product {
+    margin: 0 5px 25px 5px;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.card-product:hover {
+    box-shadow: 0 1px 15px rgba(0, 0, 0, 0.3);
+}
+.product-img {
+    display: block;
+    padding: 12px;
+    /* width: 282px; */
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+.card-product_img {
+    padding-top: 100%;
+    background-repeat: no-repeat;
+    /* Khi anh nho(contain) */
+    background-size: contain;
+    /*Khi anh qua lon (cover + background-position: center)*/
+    /* background-size: cover;  */
+    background-position: center;
+    transition: all 0.5s;
+}
+.card-product:hover .card-product_img{
+    transform: scale(1.02);
+  }

@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/* Navbar */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    position: absolute;
+    display: none;
+    z-index: 123;
+    list-style-type: none;
+    background-color: aquamarine;
+    padding: 0;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+
+/* Product */
+.list_product-title {
+    width: 100%;
+    color: #444;
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: 200;
+    margin: 10px 5px 0px 5px
+}
+.product-card {
+    margin: 0 5px 25px 5px;
+    overflow: hidden;
+}

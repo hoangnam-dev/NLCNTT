@@ -185,7 +185,7 @@
   
                   <!-- Search -->
                   <div class="header-of-search">
-                      <a href="{{ route('home') }}" style="text-decoration: none">
+                      <a href="{{ route('client.home') }}" style="text-decoration: none">
                         <div class="header_logo">
                             <img class="logo_img" src="{{ asset('assets/uploads/web_logo.png') }}" alt="logo">
                             <span class="store-name">HNStore</span>
