@@ -70,7 +70,7 @@
           </a>
           <ul class="dropdown-content" style="width: 165px">
             @foreach ($categories as $value)
-            <li><a class="dropdown-item" href="{{ route('client.productsbycategory', ['danh_muc'=>$value->madm]) }}">{{ $value->tendm }}</a></li>
+            <li><a class="dropdown-item" href="{{ route('client.productsbycategory', ['madm'=>$value->madm]) }}">{{ $value->tendm }} - {{ $value->madm }}</a></li>
             @endforeach
           </ul>
         </li>

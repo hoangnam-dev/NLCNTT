@@ -19,8 +19,18 @@
           <img src="{{ asset('assets/images/img-user.jpg') }}" class="img-circle elevation-2"
             alt="User Image">
         </div>
-        <a href="{{ route('admin.users.admin-edit', ['manv'=>Auth::guard('admin')->user()->manv]) }}" class="d-block">{{
-          Auth::guard('admin')->user()->tennv }}</a>
+        {{-- @if (!isset(Auth::guard('admin')->user()->manv))
+        @php
+          return redirect()->route('admin.login');
+        @endphp
+        @else
+        <a href="{{ route('admin.users.admin-edit', ['manv'=>Auth::guard('admin')->user()->manv]) }}" class="d-block">
+        {{ Auth::guard('admin')->user()->tennv }}
+        </a>
+        @endif --}}
+        <a href="{{ route('admin.users.admin-edit', ['manv'=>Auth::guard('admin')->user()->manv]) }}" class="d-block">
+          {{ Auth::guard('admin')->user()->tennv }}
+        </a>
       </div>
     </div>
 

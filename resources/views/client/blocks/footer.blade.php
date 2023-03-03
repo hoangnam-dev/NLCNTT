@@ -63,7 +63,7 @@
           </h6>
           @foreach ($categories as $category)
           <p>
-            <a class="text-reset text-decoration-none" href="{{ route('client.productsbycategory', ['danh_muc'=>$category->madm]) }}" class="text-reset">{{ $category->tendm }}</a>
+            <a class="text-reset text-decoration-none" href="{{ route('client.productsbycategory', ['madm'=>$category->madm]) }}" class="text-reset">{{ $category->tendm }}</a>
           </p>
           @endforeach
         </div>
