@@ -38,7 +38,7 @@ class AdminController extends Controller
         // dd($today);
         $this->data['orderQuantity'] = DB::table('donhang')->whereBetween('ngaydh',[$firstDay, $lastDay])->count();
         $this->data['newOrder'] = Order::where('trangthaitk', 0)->count();
-        $this->data['total'] = DB::table('donhang')->selectRaw('sum(tongtien) as tongtien')->where('trangthaitk', 2)->first();
+        $this->data['total'] = DB::table('donhang')->selectRaw('sum(tongtien) as tongtien')->where('trangthai', 2)->first();
         // dd($this->data['total']);
 
         return view('admin.users.dashboard', $this->data);
