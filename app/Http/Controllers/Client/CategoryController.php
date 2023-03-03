@@ -36,9 +36,26 @@ class CategoryController extends Controller
     }
     public function listProductsByCategory(Request $request)
     {
-        // dd($request->all());
         $this->data['categories'] = Categories::where('trangthai', '=', '1')->orderBy('madm', 'ASC')->get();
         $this->data['promotions'] = Promotion::orderBy('makm', 'ASC')->get();
+        $this->data['category'] = DB::table('danhmuc')->where('madm', '=', $request->madm)->first();
+        $this->data['categoryName'] = $this->data['category']->tendm;
+        $this->data['categoryID'] = $request->madm;
+        $this->data['title'] = "Danh mục";
+        $this->data['sliders'] = Sliders::orderBy('maslider', 'DESC')->get();
+        $this->data['sliders'] = $this->data['sliders']->toArray();
+        $this->data['total_item'] = isset(Session::all()['carts']) ? count(Session::all()['carts']) : 0;
+        $this->data['listProducts'] = DB::table('sanpham')
+            ->join('khuyenmai', 'khuyenmai.makm', '=', 'sanpham.makm')
+            ->where('madm', '=', $request->madm)
+            ->orderBy('masp', 'DESC')
+            ->paginate($this->paginateNumber);
+
+        return view('client.category.index', $this->data);
+    }
+
+    public function productOfCategory(Request $request)
+    {
         $this->data['category'] = DB::table('danhmuc')->where('madm', '=', $request->madm)->first();
         $this->data['categoryName'] = $this->data['category']->tendm;
         $this->data['listProducts'] = DB::table('sanpham')
