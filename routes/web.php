@@ -40,9 +40,10 @@ Route::prefix('/news')->group(function () {
 // Category
 Route::prefix('/categories')->group(function () {
     Route::get('/',[CategoryController::class, 'index'])->name('client.category');
-    Route::get('/{danh_muc}',[CategoryController::class, 'listProductsByCategory'])->name('client.productsbycategory');
+    Route::get('/{madm}',[CategoryController::class, 'listProductsByCategory'])->name('client.productsbycategory');
+    Route::get('/ajax/{danh_muc}',[CategoryController::class, 'productOfCategory'])->name('client.productsofcategory');
     Route::post('/loc-theo-gia',[CategoryController::class, 'sortPrice'])->name('client.category.sort-price');
-    
+
 });
 
 // Cart
